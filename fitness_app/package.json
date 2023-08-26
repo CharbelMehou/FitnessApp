@@ -14,7 +14,7 @@
     "react-dom": "^18.0.0",
     "react-horizontal-scrolling-menu": "^2.7.1",
     "react-i18next": "^13.2.0",
-    "react-loader-spinner": "^6.0.0-0",
+    "react-loader-spinner": "^5.4.5",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1"
