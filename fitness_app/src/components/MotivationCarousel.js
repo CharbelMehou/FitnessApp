@@ -29,10 +29,10 @@ const MotivationCarousel = () => {
         >
         {
           motivationSources.map((motivation, index) => (
-            <Box key={index}sx={{display : 'flex',justifyContent:'flex-start'}}>
-            <Typography color="#FF2625"sx={{fontSize:'25px'}}>
-                {motivation.label}
-            </Typography>
+            <Box key={index}sx={{display : 'flex',justifyContent:'flex-start',width:{xs:'50%',lg:'100%'}}}>
+                <Typography color="#FF2625"sx={{fontSize:{xs:'20px',lg:'25px'}}}>
+                    {motivation.label}
+                </Typography>
             </Box>
         ))
       }

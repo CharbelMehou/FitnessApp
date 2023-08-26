@@ -30,9 +30,8 @@ const GymLiftersCarousel = () => {
           <Box 
             key={index} 
             sx={{ 
-             
-              height: '100%' 
-            }}
+              height: '100%' ,
+            width:{xs:'50%',lg:'100%'}}}
           >
             <img 
               src={image.src} 
@@ -42,6 +41,7 @@ const GymLiftersCarousel = () => {
               alignItems:{xs:'flex-start',lg:'flex-end'}, 
                 maxWidth: '100%', 
                 height: 'auto', 
+                
               }} 
             />
           </Box>

@@ -23,7 +23,9 @@ const HeroBanner = () => {
         justifyContent: 'space-between',
       }}>
         <Box sx={{flexGrow: 1 , flexDirection:'column',display: 'flex', justifyContent: 'center',alignItems:'center',gap:2}}>
-        <MotivationCarousel/>
+            <Box sx={{ flexGrow: 1 , display: 'flex', justifyContent: {xs:'flex-start',lg:'flex-end'}}}>
+              <MotivationCarousel/>
+            </Box>
           <Box sx={{textAlign:'justify'}}>
             <Typography  sx={{fontSize:'25px'}} fontWeight={700}>
             {t("workout")}
@@ -38,14 +40,14 @@ const HeroBanner = () => {
             {t("and-repeat")}
             </Typography>
           </Box>
-            <Box sx={{mt:2}}>
-              <Typography sx={{fontSize:'22px'}}>
-              {t("exercises-below")}
-            </Typography>
-              </Box>
+              <Box sx={{mt:2,width:{xs:'50%',lg:'100%'}}}>
+                <Typography sx={{textAlign:'center',fontSize:{xs:'16px',lg:'25px'}}}>
+                  {t("exercises-below")}
+                </Typography>
+             </Box>
         </Box>
         
-        <Box sx={{ flexGrow: 1 , display: 'flex', justifyContent: 'flex-end',}}>
+        <Box sx={{ flexGrow: 1 , display: 'flex', justifyContent: {xs:'flex-start',lg:'flex-end'}}}>
           <GymLiftersCarousel />
         </Box>
       </Box>
