@@ -21,25 +21,37 @@ const HeroBanner = () => {
         flexDirection: { xs: 'column', lg: 'row' },
         flexWrap: {xs:'wrap',lg:'nowrap'},
         justifyContent: 'space-between',
-        flexGrow: 1
       }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <MotivationCarousel />
-          <Typography sx={{ fontSize: '22px' }} fontWeight={700}>
-          {t("workout")}<br/>{t("sweat")}<br/>{t("smile")}<br/>{t("and-repeat")}
-        </Typography>
+        <Box sx={{flexGrow: 1 , flexDirection:'column',display: 'flex', justifyContent: 'center',alignItems:'center',gap:2}}>
+        <MotivationCarousel/>
+          <Box sx={{textAlign:'justify'}}>
+            <Typography  sx={{fontSize:'25px'}} fontWeight={700}>
+            {t("workout")}
+            </Typography>
+            <Typography sx={{fontSize:'25px'}} fontWeight={700}>
+            {t("sweat")}
+            </Typography>
+            <Typography sx={{fontSize:'25px'}} fontWeight={700}>
+            {t("smile")}
+            </Typography>
+            <Typography sx={{fontSize:'25px'}} fontWeight={700}>
+            {t("and-repeat")}
+            </Typography>
+          </Box>
+            <Box sx={{mt:2}}>
+              <Typography sx={{fontSize:'22px'}}>
+              {t("exercises-below")}
+            </Typography>
+              </Box>
         </Box>
         
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 , display: 'flex', justifyContent: 'flex-end',}}>
           <GymLiftersCarousel />
         </Box>
       </Box>
       
       
-        
-        <Typography>
-          {t("exercises-below")}
-        </Typography>
+      
      
     
     </Paper>

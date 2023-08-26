@@ -15,7 +15,8 @@ const imageSources = [
 
 const GymLiftersCarousel = () => {
   return (
-    <Box sx={{overflow: 'hidden'}}>
+    <Box sx={{  display: 'flex',
+    justifyContent:'flex-end', width: { xs: '100%', lg: '70%' }, overflow: 'hidden'}}>
       <Carousel
         showArrows={false}
         showStatus={false}
@@ -29,19 +30,18 @@ const GymLiftersCarousel = () => {
           <Box 
             key={index} 
             sx={{ 
-              display: 'flex', 
-              justifyContent: {xs:'flex-start',lg:'flex-end'}, 
-              alignItems:{xs:'flex-start',lg:'flex-end'}, 
+             
               height: '100%' 
             }}
           >
             <img 
               src={image.src} 
               alt={image.alt} 
-              style={{ 
-                maxWidth: 'auto', 
+              sx={{ display: 'flex',
+              justifyContent: {xs:'flex-start',lg:'flex-end'},
+              alignItems:{xs:'flex-start',lg:'flex-end'}, 
+                maxWidth: '100%', 
                 height: 'auto', 
-                objectFit: 'contain' 
               }} 
             />
           </Box>

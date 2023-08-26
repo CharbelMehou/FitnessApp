@@ -16,7 +16,7 @@ const MotivationCarousel = () => {
   ]
   
   return (
-    
+    <Box sx={{ display: 'flex', justifyContent: 'center'}}>
       <Carousel
         showArrows={false}
         showStatus={false}
@@ -25,18 +25,19 @@ const MotivationCarousel = () => {
         infiniteLoop={true}
         showIndicators={false}
         interval={10000}
-      
-      >
+        
+        >
         {
-        motivationSources.map((motivation, index) => (
+          motivationSources.map((motivation, index) => (
             <Box key={index}sx={{display : 'flex',justifyContent:'flex-start'}}>
-            <Typography color="#FF2625">
+            <Typography color="#FF2625"sx={{fontSize:'25px'}}>
                 {motivation.label}
             </Typography>
             </Box>
         ))
-        }
+      }
    </Carousel>
+      </Box>
   );
 };
 
