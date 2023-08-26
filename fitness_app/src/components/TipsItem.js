@@ -6,11 +6,11 @@ const TipsItem = ({labelTips,
     title,title2,title3,
     imgAlt}) => {
   return (
-    <Box sx={{ display: "flex",flexDirection: "column"}}>
+    <Box sx={{ display: "flex",flexDirection: "column",mt:2}}>
     <Typography sx={{ fontFamily: "Alegreya", fontSize: "24px" }}>
     {labelTips}
       </Typography>
-      <Box sx={{ display: "flex",flexDirection: "row",gap:2 ,flexWrap:{xs:"wrap",lg:"nowrap"}}} >
+      <Box sx={{ display: "flex",flexDirection: "row",gap:2 ,flexWrap:{xs:"wrap",lg:"nowrap"},mt:1}} >
 
       <iframe className='advice-video'
        src={videoLink}

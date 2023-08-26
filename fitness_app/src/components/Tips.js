@@ -39,8 +39,8 @@ const Tips = () => {
           </Box>
         </Box>
           
-          <Paper sx={{ p: 3}}>
-              <Box sx={{display:'flex',flexDirection:"row",gap:1}}>
+          <Paper sx={{p: 3}}>
+              <Box sx={{display:'flex',flexDirection:"row",gap:1,mb:2}}>
                 <Typography sx={{ fontFamily: "Alegreya", fontSize: "24px" }}>
                 {t('tips-here')} <span style={{ fontFamily: "Alegreya",fontWeight: 'bold', fontSize: "24px" ,color:"#FF2625" }}> {goal==="GainMuscle"?
                   t('to-gain-muscle'):t('to-loose-Weigth')}  </span>
@@ -79,8 +79,6 @@ const Tips = () => {
                 title3={"Can&#39;t Eat Enough To Gain Muscle? Do THIS"}
                 imgAlt={"food"}
                 />
-                  <Box>
-                </Box>
           </>
           :
           <> 
@@ -105,8 +103,6 @@ const Tips = () => {
                   title3={"5 aliments à éviter pour perdre du gras ❌"}
                   imgAlt={"food"}
                   />
-                  <Box>
-                </Box>
           </>
           }
                   <Typography sx={{ fontFamily: "Alegreya", fontSize: "24px" }}>

@@ -41,7 +41,9 @@ const resources = {
       "it-will-help-you-improve-your":"It will help you improve your",
       "exercises-to-target-your":"exercises to target your",
       "copyright":"© 2023 All rights reserved.",
-      "Advices": "Advices"
+      "Advices": "Advices",
+      "watch-exercise-videos":"Wath some videos related to this exercise"
+
     }
   },
   fr: {
@@ -51,20 +53,20 @@ const resources = {
         "Home": "Accueil",
         "Welcome": "Bienvenue",
         "and-repeat": "Et Répétez",
-        "awesome-exercises-you": "Exercices géniaux pour vous",
-        "bup-is-one-of-the-best": "bup est l'un des meilleurs",
+        "awesome-exercises-you": " Des exercices géniaux pour vous",
+        "bup-is-one-of-the-best": " est l'un des meilleurs exercices ",
         "copyright": "© 2023 Tous droits réservés.",
         "eat-work-sleep-again": "Manger, Travailler, dormez, encore et encore!!!",
         "equipment": "Équipement",
         "exercise-videos": "Vidéos d'exercices",
         "exercises-below": "Découvrez les exercices les plus efficaces personnalisés pour vous juste en dessous",
         "exercises-keep-you-strong": "Les exercices vous rendent forts.",
-        "exercises-to-target-your": "Exercices pour cibler vos",
+        "exercises-to-target-your": "pour cibler vos",
         "food-advices": "La clé pour atteindre n'importe quel objectif de forme est dans votre alimentation !",
         "here-we-go": "C'est parti !!!",
-        "it-will-help-you-improve-your": "Cela vous aidera à améliorer votre",
+        "it-will-help-you-improve-your": "Cela vous aidera à améliorer votre Humeur et gain d'énergie",
         "made-by": "Réalisé par Charbel MEHOU",
-        "mood-and-gain-energy": "Humeur et gain d'énergie",
+        "mood-and-gain-energy": "votre Humeur et gain d'énergie",
         "motivation-continue": "Ne vous inquiétez pas, tout arrivera bientôt !!!",
         "nothing-can-stop-you": "Rien ne peut vous arrêter",
         "rythmn-advice": "Vous devriez trouver votre propre rythme pour aller à la salle de sport, mais voici quelques bons conseils",
@@ -83,7 +85,8 @@ const resources = {
         "water-advice": "L'eau est votre amie ! Vous devriez être accro à l'eau",
         "watch": "Regarder",
         "weight-loss": "Perte de poids",
-        "workout": "Entraînez vous"
+        "workout": "Entraînez vous",
+        "watch-exercise-videos":"Regarder des videos de cet exercice"
       }
       
   }

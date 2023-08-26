@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Stack, Button } from '@mui/material';
+import { Typography, Stack,Box, Button } from '@mui/material';
 
 import BodyPartImage from '../assets/icons/body-part.png';
 import TargetImage from '../assets/icons/target.png';
@@ -29,15 +29,19 @@ const Detail = ({ exerciseDetail }) => {
     <Stack gap="60px" sx={{ flexDirection: { lg: 'row' }, p: '20px', alignItems: 'center' }}>
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
       <Stack sx={{ gap: { lg: '35px', xs: '20px' } }}>
-        <Typography sx={{ fontSize: { lg: '64px', xs: '30px' } }} fontWeight={700} textTransform="capitalize">
-          {name}
-        </Typography>
-        <Typography sx={{ fontSize: { lg: '24px', xs: '18px' } }} color="#4F4C4C">
-          {t("exercises-keep-you-strong")}<br/>
-          <span style={{ textTransform: 'capitalize' }}>{name}</span> {t("bup-is-one-of-the-best")} 
-          <br /> {t("exercises-to-target-your")}{' '}{target}.{ t("it-will-help-you-improve-your")}
-          <br /> {t("mood-and-gain-energy")}.
-        </Typography>
+          <Typography sx={{ fontSize: { lg: '64px', xs: '30px' }}} fontWeight={700} textTransform="capitalize">
+            {name}
+          </Typography>
+        <Box sx={{textAlign:'justify'}}>
+          <Typography sx={{ fontSize: { lg: '24px', xs: '18px' } }} color="#4F4C4C">
+            <span style={{ textTransform: 'capitalize' }}>{name}</span> {t("bup-is-one-of-the-best")}           
+          </Typography>
+          <Typography sx={{ fontSize: { lg: '24px', xs: '18px' } }} color="#4F4C4C">
+            {t("exercises-to-target-your")}{' '}<span style={{color:"#FF2625"}}> {target}</span>.{ t("it-will-help-you-improve-your")}
+            {t("mood-and-gain-energy")}.
+          </Typography>
+
+        </Box>
         {extraDetail?.map((item) => (
           <Stack key={item.name} direction="row" gap="24px" alignItems="center">
             <Button sx={{ background: '#FFF2DB', borderRadius: '50%', width: '100px', height: '100px' }}>
