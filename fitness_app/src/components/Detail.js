@@ -24,7 +24,6 @@ const Detail = ({ exerciseDetail }) => {
       name: equipment,
     },
   ]
-
   return (
     <Stack gap="60px" sx={{ flexDirection: { lg: 'row' }, p: '20px', alignItems: 'center' }}>
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
@@ -37,8 +36,8 @@ const Detail = ({ exerciseDetail }) => {
             <span style={{ textTransform: 'capitalize' }}>{name}</span> {t("bup-is-one-of-the-best")}           
           </Typography>
           <Typography sx={{ fontSize: { lg: '24px', xs: '18px' } }} color="#4F4C4C">
-            {t("exercises-to-target-your")}{' '}<span style={{color:"#FF2625"}}> {target}</span>.{ t("it-will-help-you-improve-your")}
-            {t("mood-and-gain-energy")}.
+            {t("exercises-to-target-your")}{' '}<span style={{color:"#FF2625"}}> {t(target)}</span>.{t("it-will-help-you-improve-your")}
+           .
           </Typography>
 
         </Box>
@@ -48,7 +47,7 @@ const Detail = ({ exerciseDetail }) => {
               <img src={item.icon} alt={bodyPart} style={{ width: '50px', height: '50px' }} />
             </Button>
             <Typography textTransform="capitalize" sx={{ fontSize: { lg: '30px', xs: '20px' } }}>
-              {item.name}
+              {t(item.name)}
             </Typography>
           </Stack>
         ))}

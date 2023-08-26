@@ -22,7 +22,7 @@ const HeroBanner = () => {
         flexWrap: {xs:'wrap',lg:'nowrap'},
         justifyContent: 'space-between',
       }}>
-        <Box sx={{flexGrow: 1 , flexDirection:'column',display: 'flex', justifyContent: 'center',alignItems:'center',gap:2}}>
+        <Box sx={{flexGrow: 1 , flexDirection:'column',display: 'flex', justifyContent: 'center',alignItems:'flex-start',gap:2}}>
             <Box sx={{ flexGrow: 1 , display: 'flex', justifyContent: {xs:'flex-start',lg:'flex-end'}}}>
               <MotivationCarousel/>
             </Box>
@@ -40,7 +40,7 @@ const HeroBanner = () => {
             {t("and-repeat")}
             </Typography>
           </Box>
-              <Box sx={{mt:2,width:{xs:'50%',lg:'100%'}}}>
+              <Box sx={{mt:2,mb:2,width:{xs:'50%',lg:'100%'}}}>
                 <Typography sx={{textAlign:'center',fontSize:{xs:'16px',lg:'25px'}}}>
                   {t("exercises-below")}
                 </Typography>

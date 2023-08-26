@@ -1,8 +1,11 @@
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
 import Icon from '../assets/icons/gym.png';
+import { useTranslation } from 'react-i18next';
 
-const BodyPart = ({ item, setBodyPart, bodyPart }) => (
+const BodyPart = ({ item, setBodyPart, bodyPart }) => {
+  const {t}=useTranslation()
+  return(
   <Stack
     type="button"
     alignItems="center"
@@ -18,8 +21,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     }}
   >
     <img src={Icon} alt="dumbbell" style={{ width: '40px', height: '40px' }} />
-    <Typography fontSize="24px" fontWeight="bold" fontFamily="Alegreya" color="#3A1212" textTransform="capitalize"> {item}</Typography>
+    <Typography fontSize="24px" fontWeight="bold" fontFamily="Alegreya" color="#3A1212" textTransform="capitalize"> {t(item)}</Typography>
   </Stack>
-);
+)}
 
 export default BodyPart;

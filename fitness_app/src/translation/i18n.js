@@ -42,8 +42,25 @@ const resources = {
       "exercises-to-target-your":"exercises to target your",
       "copyright":"© 2023 All rights reserved.",
       "Advices": "Advices",
-      "watch-exercise-videos":"Wath some videos related to this exercise"
-
+      "watch-exercise-videos":"Wath some videos related to this exercise",
+      "waist":"Waist",
+      "abs":"Abs",
+      "body weight":"Body Weight",
+      "back":"Back",
+      "cardio":"Cardio",
+      "chest":"Chest",
+      "pectorals":"pectorals",
+      "lower arms":"Lower Arms",
+      "forearms":"Forearms",
+      "lower legs":"Lower Legs",
+      "neck":"Neck",
+      "shoulders":"Shoulders",
+      "upper arms":"Upper Arms",
+      "upper legs":"Upper Legs",
+       "triceps":"Triceps",
+       "biceps":"Biceps",
+       "Lats":"Lats",
+      "all":"All"
     }
   },
   fr: {
@@ -64,7 +81,7 @@ const resources = {
         "exercises-to-target-your": "pour cibler vos",
         "food-advices": "La clé pour atteindre n'importe quel objectif de forme est dans votre alimentation !",
         "here-we-go": "C'est parti !!!",
-        "it-will-help-you-improve-your": "Cela vous aidera à améliorer votre Humeur et gain d'énergie",
+        "it-will-help-you-improve-your": "Cela vous aidera à améliorer votre Humeur et à gagner de l'énergie",
         "made-by": "Réalisé par Charbel MEHOU",
         "mood-and-gain-energy": "votre Humeur et gain d'énergie",
         "motivation-continue": "Ne vous inquiétez pas, tout arrivera bientôt !!!",
@@ -86,7 +103,26 @@ const resources = {
         "watch": "Regarder",
         "weight-loss": "Perte de poids",
         "workout": "Entraînez vous",
-        "watch-exercise-videos":"Regarder des videos de cet exercice"
+        "watch-exercise-videos":"Regarder des videos de cet exercice",
+        "waist":"Taille",
+        "abs":"Abdos",
+        "body weight":"Poids de Corps",
+        "back":"Dos",
+        "cardio":"Cardio",
+        "chest":"Poitrine",
+        "pectorals":"Pectoraux",
+        "lower Arms":"Avant-bras & Brachial",
+        "forearms":"Avant-bras",
+        "lower legs":"Mollets",
+        "neck":"Cou",
+        "pectorals":"Pectoraux",
+        "shoulders":"Epaules",
+        "upper arms":"Triceps & Biceps",
+        "triceps":"Triceps",
+        "upper legs":"Quadriceps & Ischios",
+        "biceps":"Biceps",
+        "Lats":"Dorsaux",
+        "all":"Tout"
       }
       
   }
