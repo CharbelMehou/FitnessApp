@@ -7,13 +7,6 @@ import { useTranslation } from 'react-i18next';
 const Tips = () => {
   const [goal,setGoal]=useState("WeigthLoss")
   
-  const handleSwitchGoal = async () => {
-    if (goal==="WeigthLoss") {
-      setGoal("GainMuscle")
-    }else{
-      setGoal("WeigthLoss")
-    }
-  }
   const {t}=useTranslation()
   return (
     <Box id="tips" sx={{ display: "flex", flexDirection: "column",gap:2, p: 3 }}>
@@ -21,9 +14,9 @@ const Tips = () => {
           <Button         
             sx={{
               bgcolor: goal==="WeigthLoss"?'#FF2625':'#808080',
-              color:'#fff',
+              color:'#fff'
             }}
-            onClick={handleSwitchGoal}
+            onClick={() => setGoal("WeigthLoss")}
             >{t('weight-loss')}
           </Button>
 
@@ -33,7 +26,7 @@ const Tips = () => {
                 bgcolor: goal==="GainMuscle"?'#FF2625':'#808080',
                 color:'#fff',
               }}
-              onClick={handleSwitchGoal}
+              onClick={() => setGoal("GainMuscle")}
               >{t('GainMuscle')}
             </Button>
           </Box>
