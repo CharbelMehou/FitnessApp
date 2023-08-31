@@ -1,7 +1,7 @@
 # React-FitnessApp
 
 Description :
-Développé une application réactive fournissant des conseils et astuces en temps réel pour aider les utilisateurs à s'entraîner efficacement. L'application s'appuie sur une API REST externe pour afficher des conseils d'entraînement pertinents, et supporte l'anglais et le français pour une portée globale.
+Une application réactive fournissant des conseils et astuces en temps réel pour aider les utilisateurs à s'entraîner efficacement. L'application s'appuie sur une API REST externe pour afficher des conseils d'entraînement pertinents, et supporte l'anglais et le français pour une portée globale.
 
 Technologies utilisées :
 -React js
