@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import Button from '@mui/material/Button'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import Logo from '../assets/images/Logo.png'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import { useTranslation } from 'react-i18next'
@@ -12,7 +13,9 @@ const handleLInkedLnClick = () => {
 const handleGithubClic=()=>{
   window.open('https://github.com/CharbelMehou/FitnessApp','_blank')
 }
-
+const handleEmailClick = () => {
+  window.open('mailto:mehoucharbel@gmail.com?subject=Contact depuis le site Web', '_blank');
+}
 const Footer = () => {
   const {t} =useTranslation()
   return(
@@ -41,6 +44,13 @@ const Footer = () => {
         >
       <GitHubIcon />
       </Button>
+      <Button
+          variant="contained"
+          sx={{backgroundColor:"#FF2625"}}
+          onClick={handleEmailClick}
+        >
+        <MailOutlineIcon />   
+     </Button>
     </Box>
         </Box>
   </Box>
