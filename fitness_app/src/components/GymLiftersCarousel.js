@@ -5,10 +5,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const imageSources = [
   {
-    src: "https://getwallpapers.com/wallpaper/full/9/e/0/53506.jpg",
-    alt: "CarouselImage1",
-  },
-  {
     src: "https://getwallpapers.com/wallpaper/full/b/5/6/53699.jpg",
     alt: "CarouselImage2",
   },
@@ -68,7 +64,7 @@ const GymLiftersCarousel = () => {
                 display: "flex",
                 justifyContent: { xs: "flex-start", lg: "flex-end" },
                 alignItems: { xs: "flex-start", lg: "flex-end" },
-                maxWidth: "100%",
+                width: "400px",
                 height: "auto",
               }}
             />

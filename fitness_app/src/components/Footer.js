@@ -37,7 +37,7 @@ const Footer = () => {
         <img
           src={Logo}
           alt="logo"
-          style={{ width: "200px", height: "100px" }}
+         className="logoFooter"
         />
       </Stack>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1, pb: 2 }}>

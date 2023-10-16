@@ -14,6 +14,19 @@ body {
     width: 0px;
   }
   
+  .logoNavbar{
+    width: 150px;
+    height: 50px;
+    margin: 0px 20px;
+  }
+  .stackNavbar{
+    font-Family: 'Alegreya';
+    font-Size:20px;
+  }
+  .languageswitcherImg{
+     width: 35px;
+     height: auto;
+  }
   .right-arrow,
   .left-arrow {
     cursor: pointer;
@@ -111,7 +124,10 @@ body {
     height: 577px;
     text-decoration: none;
   }
-  
+  .logoFooter{
+     width: 200px;
+     height: 100px;
+  }
   @media screen and (max-width:1200px) {
     .detail-image {
       width: 300px;
@@ -147,4 +163,31 @@ body {
     .exercise-card {
       width: 280px;
     }
+    .logoNavbar{
+      width: 75px;
+      height: auto;
+      margin: 0px 20px;
+    }
+    .stackNavbar{
+      font-size:  15px;
+    }
+
+    .languageswitcherImg{
+      width: 20px;
+       height: 20px;
+    }
+    .logoFooter{
+      width: 120px;
+      height: auto;
+   }
   }
+  .customLink {
+    text-decoration: none;
+    color: #3A1212;
+  
+  }
+  
+  .customLink:hover {
+    border-bottom: 3px solid #FF2625;
+  }
+  

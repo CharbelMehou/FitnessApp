@@ -25,50 +25,14 @@ const HeroBanner = () => {
           justifyContent: "space-between",
         }}
       >
-        <Box
-          sx={{
-            flexGrow: 1,
-            flexDirection: "column",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-            <MotivationCarousel />
-          </Box>
-          <Box sx={{ textAlign: "left" }}>
-            <Typography
-              sx={{ fontSize: { xs: "16px", lg: "25px" } }}
-              fontWeight={700}
-            >
-              {t("workout")}
-            </Typography>
-            <Typography
-              sx={{ fontSize: { xs: "16px", lg: "25px" } }}
-              fontWeight={700}
-            >
-              {t("sweat")}
-            </Typography>
-            <Typography
-              sx={{ fontSize: { xs: "16px", lg: "25px" } }}
-              fontWeight={700}
-            >
-              {t("smile")}
-            </Typography>
-            <Typography
-              sx={{ fontSize: { xs: "16px", lg: "25px" } }}
-              fontWeight={700}
-            >
-              {t("and-repeat")}
-            </Typography>
-          </Box>
-        </Box>
+        
 
         <Box
           sx={{
             flexGrow: 1,
             display: "flex",
-            justifyContent: { xs: "flex-start", lg: "flex-end" },
+            justifyContent: "center",
+            alignItems: "center"
           }}
         >
           <GymLiftersCarousel />
@@ -78,11 +42,11 @@ const HeroBanner = () => {
         sx={{
           display: "flex",
           gap: 1,
-          justifyContent: "row",
+          flexDirection: "row",
+          justifyContent:'center',
           flexWrap: { xs: "wrap", lg: "nowrap" },
           mt: 2,
           mb: 2,
-          width: { xs: "50%", lg: "100%" },
         }}
       >
         <Typography
