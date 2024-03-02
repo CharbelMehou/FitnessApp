@@ -1,20 +1,21 @@
-import { Box, IconButton, Paper, Typography } from "@mui/material";
 import React from "react";
-import GymLiftersCarousel from "./GymLiftersCarousel";
-import MotivationCarousel from "./MotivationCarousel";
+import { Box,IconButton, Typography } from "@mui/material";
+import FitImg from "../assets/images/fit1.jpg";
 import { useTranslation } from "react-i18next";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
 const HeroBanner = () => {
   const { t } = useTranslation();
 
   return (
-    <Paper
+    <Box
       sx={{
         display: "flex",
         flexDirection: "column",
         m: 2,
         p: 2,
         gap: 2,
+        justifyContent: "space-between",
       }}
     >
       <Box
@@ -22,20 +23,42 @@ const HeroBanner = () => {
           display: "flex",
           flexDirection: { xs: "column", lg: "row" },
           flexWrap: { xs: "wrap", lg: "nowrap" },
-          justifyContent: "space-between",
+          alignItems: "center",
+          justifyContent: "center",
+          m: 2,
         }}
       >
-        
-
         <Box
           sx={{
-            flexGrow: 1,
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
+            flexDirection: 'column',
+            mt: 2,
+            width: { xs: '100%', lg: '50%' }, // Citation prend 50% de largeur sur grand écran
           }}
         >
-          <GymLiftersCarousel />
+          <Typography variant="h3" sx={{ mb: 1 }}>
+            "The way to get started is to quit talking and begin doing."
+          </Typography>
+          <Typography variant="h3">
+            — Walt Disney
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: { xs: '100%', lg: '50%' }, // Image prend 50% de largeur sur grand écran
+          }}
+        >
+          <img
+            src={FitImg}
+            alt="FitImg"
+            style={{
+              width: '100%', // Prend toute la largeur disponible
+              height: 'auto', // Hauteur automatique pour maintenir l'aspect ratio
+            }}
+          />
         </Box>
       </Box>
       <Box
@@ -43,14 +66,14 @@ const HeroBanner = () => {
           display: "flex",
           gap: 1,
           flexDirection: "row",
-          justifyContent:'center',
+          justifyContent: 'center',
           flexWrap: { xs: "wrap", lg: "nowrap" },
           mt: 2,
           mb: 2,
         }}
       >
         <Typography
-          sx={{ textAlign: "flex-start", fontSize: { xs: "16px", lg: "22px" } }}
+          sx={{ textAlign: "center",fontWeight:"bold",fontSize: { xs: "16px", lg: "30px" } }}
         >
           {t("exercises-below")}
         </Typography>
@@ -62,7 +85,7 @@ const HeroBanner = () => {
           <ArrowDownwardIcon />
         </IconButton>
       </Box>
-    </Paper>
+    </Box>
   );
 };
 

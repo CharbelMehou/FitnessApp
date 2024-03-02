@@ -54,7 +54,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   };
 
   return (
-    <Box
+    <Box className="circle-shadow search-exercise"
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -63,14 +63,14 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     >
       <Typography
         fontWeight={700}
-        sx={{ fontSize: { lg: "44px", xs: "33px" }, textAlign: "center" }}
+        sx={{ fontSize: { lg: "44px", xs: "33px" }, textAlign: "center", mb:3 }}
       >
         {t("awesome-exercises-you")}
         <br />
         {t("should-try")}
       </Typography>
 
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center" }} >
         <TextField
           height="76px"
           sx={{
@@ -78,6 +78,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             width: { lg: "1170px", xs: "350px" },
             backgroundColor: "#fff",
             borderRadius: "40px",
+            mr:1
           }}
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
@@ -91,6 +92,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             color: "#fff",
             width: { lg: "173px", xs: "80px" },
             height: "56px",
+            borderRadius:"40px",
             fontSize: { lg: "20px", xs: "14px" },
           }}
           onClick={handleSearch}

@@ -53,7 +53,7 @@ const ExerciseDetail = () => {
   if (!exerciseDetail) return <div>No Data</div>;
 
   return (
-    <Box sx={{ mt: { lg: "96px", xs: "60px" } }}>
+    <Box sx={{ mt:2}}>
       <Detail exerciseDetail={exerciseDetail} />
       <ExerciseVideos
         exerciseVideos={exerciseVideos}

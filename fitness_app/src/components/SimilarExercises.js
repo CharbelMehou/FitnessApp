@@ -11,7 +11,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
       <Typography
         sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
         fontWeight={700}
-        color="#000"
+        color="#fff"
         mb="33px"
       >
         {t("similar-exercises")}
@@ -30,7 +30,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
           mt: { lg: "100px", xs: "60px" },
         }}
         fontWeight={700}
-        color="#000"
+        color="#fff"
         mb="33px"
       >
         {t("similar-exercises")}

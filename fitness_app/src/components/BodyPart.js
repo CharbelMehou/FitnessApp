@@ -22,7 +22,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       type="button"
       alignItems="center"
       justifyContent="center"
-      className="bodyPart-card"
+      className="glass-card"
       sx={{ ...styleDeBase, ...styleActif }}
       onClick={() => {
         setBodyPart(item);
@@ -37,8 +37,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       <Typography
         fontSize="24px"
         fontWeight="bold"
-        fontFamily="Alegreya"
-        color="#3A1212"
+        fontFamily="Helvetica, Arial, sans-serif"
+        color="red"
         textTransform="capitalize"
       >
         {t(item)}

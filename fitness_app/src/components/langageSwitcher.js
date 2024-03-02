@@ -1,10 +1,10 @@
-import { Box, IconButton } from "@mui/material";
 import React from "react";
+import { Box, IconButton } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import frIcon from "../assets/icons/fr-icon.png";
 import enIcon from "../assets/icons/en-icon.png";
 
-const LangageSwitcher = () => {
+const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -12,21 +12,39 @@ const LangageSwitcher = () => {
   };
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "row" }}>
+    <Box sx={{ display: "flex", flexDirection: "row" ,mt:1}}>
       <IconButton
         onClick={() => changeLanguage("fr")}
-        size="inherrit"
+        size="small"
+        sx={{
+          '&:hover': {
+            backgroundColor: i18n.language === 'fr' ? 'transparent' : 'rgba(0, 0, 0, 0.04)',
+          },
+        }}
       >
-        <img src={frIcon} alt="frIcon" className="languageswitcherImg" />
+        <img
+          src={frIcon}
+          alt="frIcon"
+          style={{ maxWidth: '24px', maxHeight: '24px' }}
+        />
       </IconButton>
       <IconButton
-        size="inherrit"
         onClick={() => changeLanguage("en")}
+        size="small"
+        sx={{
+          '&:hover': {
+            backgroundColor: i18n.language === 'en' ? 'transparent' : 'rgba(0, 0, 0, 0.04)',
+          },
+        }}
       >
-        <img src={enIcon} alt="enIcon" className="languageswitcherImg" />
+        <img
+          src={enIcon}
+          alt="enIcon"
+          style={{ maxWidth: '24px', maxHeight: '24px' }}
+        />
       </IconButton>
     </Box>
   );
 };
 
-export default LangageSwitcher;
+export default LanguageSwitcher;

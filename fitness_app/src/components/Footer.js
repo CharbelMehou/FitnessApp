@@ -23,14 +23,14 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <Box
-      mt="80px"
-      bgcolor="#FFF3F4"
+      bgcolor="#202020"
       sx={{
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         gap: 1,
-        pb: 2,
+        mt:2,
+        p: 2,
       }}
     >
       <Stack gap="40px" sx={{ alignItems: "center" }} flexWrap="wrap" pt="24px">

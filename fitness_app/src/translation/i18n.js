@@ -76,7 +76,7 @@ const resources = {
         "eat-work-sleep-again": "Mangez, Travaillez, dormez, encore et encore!!!",
         "equipment": "Équipement",
         "exercise-videos": "Vidéos d'exercices",
-        "exercises-below": "Découvrez les exercices les plus efficaces personnalisés pour vous ,juste en dessous ",
+        "exercises-below": "Découvrez les exercices les plus efficaces juste en dessous ",
         "exercises-keep-you-strong": "Les exercices vous rendent forts.",
         "exercises-to-target-your": "pour cibler vos",
         "food-advices": "La clé pour atteindre n'importe quel objectif de forme est dans votre alimentation !",

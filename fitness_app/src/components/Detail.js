@@ -26,6 +26,7 @@ const Detail = ({ exerciseDetail }) => {
   ];
   return (
     <Stack
+      className="circle-shadow"
       gap="60px"
       sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
     >
@@ -41,14 +42,14 @@ const Detail = ({ exerciseDetail }) => {
         <Box sx={{ textAlign: "justify" }}>
           <Typography
             sx={{ fontSize: { lg: "24px", xs: "18px" } }}
-            color="#4F4C4C"
+            color="white"
           >
             <span style={{ textTransform: "capitalize" }}>{name}</span>{" "}
             {t("bup-is-one-of-the-best")}
           </Typography>
           <Typography
             sx={{ fontSize: { lg: "24px", xs: "18px" } }}
-            color="#4F4C4C"
+            color="white"
           >
             {t("exercises-to-target-your")}{" "}
             <span style={{ color: "#FF2625" }}> {t(target)}</span>.

@@ -1,6 +1,7 @@
 body {
-    font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    font-family: 'Helvetica, Arial, sans-serif';
+    background-color: #101010;
+    color: #fff;
   }
   
   * {
@@ -13,14 +14,17 @@ body {
   ::-webkit-scrollbar {
     width: 0px;
   }
-  
+  .navbar{
+    background: linear-gradient(130deg,rgba(0, 0, 0, 0.1));
+    backdrop-filter: blur(50px) ;
+  }
   .logoNavbar{
     width: 150px;
     height: 50px;
     margin: 0px 20px;
   }
   .stackNavbar{
-    font-Family: 'Alegreya';
+    font-Family: 'Helvetica';
     font-Size:20px;
   }
   .languageswitcherImg{
@@ -60,12 +64,31 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  
+  .circle-shadow{
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #101010 10px ), repeating-linear-gradient( #80808055, #808080 );
+  }
+  .search-exercise{
+    height: 100vh;
+  }
+  .exercice-part{
+    background-color: #101010;
+    /* opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #101010 10px ), repeating-linear-gradient( #80808055, #808080 ); */
+
+  }
   .detail-image {
     width: 729px;
     height: 742px;
   }
-  
+  .glass-card{
+    background: linear-gradient(130deg,rgba(0, 0, 0, 0.1));
+    padding:10px ;
+    border-radius: 30px;
+    border:.5px solid rgb(189,189,189);
+    box-shadow: 10px 10px 20px black;
+    backdrop-filter: blur(50px) ;
+  }
   .hero-banner-img {
     position: absolute;
     right: 40px;
@@ -162,6 +185,7 @@ body {
   @media screen and (max-width:400px) {
     .exercise-card {
       width: 280px;
+      height: auto;
     }
     .logoNavbar{
       width: 75px;
@@ -183,11 +207,12 @@ body {
   }
   .customLink {
     text-decoration: none;
-    color: #3A1212;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF2625;
   
   }
   
   .customLink:hover {
-    border-bottom: 3px solid #FF2625;
+    border-bottom: 3px solid white;
   }
   

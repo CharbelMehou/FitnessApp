@@ -13,7 +13,7 @@ const ExerciseCard = ({ exercise }) => {
           sx={{
             ml: "21px",
             color: "#fff",
-            background: "#FFA9A9",
+            background: "#CC5200",
             fontSize: "14px",
             borderRadius: "20px",
             textTransform: "capitalize",
@@ -25,7 +25,7 @@ const ExerciseCard = ({ exercise }) => {
           sx={{
             ml: "21px",
             color: "#fff",
-            background: "#FCC757",
+            background: "#E59F71",
             fontSize: "14px",
             borderRadius: "20px",
             textTransform: "capitalize",
@@ -47,7 +47,6 @@ const ExerciseCard = ({ exercise }) => {
       </Typography>
     </Link>
   );
-  console.log("");
 };
 
 export default ExerciseCard;

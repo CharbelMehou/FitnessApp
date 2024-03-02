@@ -10,10 +10,12 @@ const Navbar = () => {
 
   return (
     <Box
+      className="navbar"
       sx={{
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        pt:2
       }}
     >
       <Link to="/">
@@ -26,7 +28,7 @@ const Navbar = () => {
           alignItems: "center",
         }}
       >
-        <Stack direction="row" gap="20px" className="stackNavbar">
+        <Stack direction="row" gap="10px" className="stackNavbar">
           <Link to="/" className="customLink">
             {t("Home")}
           </Link>
@@ -35,8 +37,9 @@ const Navbar = () => {
           </Link>
         </Stack>
       </Box>  
-
-      <LangageSwitcher />
+      <Box sx={{mr:3}}>
+        <LangageSwitcher />
+      </Box>
     </Box>
   );
 };

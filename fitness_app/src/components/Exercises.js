@@ -44,7 +44,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   if (!Array.isArray(exercises) || !currentExercises.length) return <Loader />;
 
   return (
-    <Box id="exercises" sx={{ mt: { lg: '109px' } }} mt="50px" p="20px">
+    <Box className="exercice-part" id="exercises" sx={{ mt: { lg: '109px' } }} mt="50px" p="20px">
       <Typography variant="h4" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">{t("showing-results")}</Typography>
       <Stack direction="row" sx={{ gap: { lg: '107px', xs: '50px' } }} flexWrap="wrap" justifyContent="center">
         {currentExercises.map((exercise, idx) => (
@@ -61,6 +61,15 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
             page={currentPage}
             onChange={paginate}
             size="large"
+            sx={{
+              ".MuiPaginationItem-root": { 
+                color: 'white', 
+                fontSize:'20px',
+                backgroundColor:'black',
+                border: "1px solid white",
+                fontWeight:'bold'
+              }
+            }}
           />
         )}
       </Stack>
