@@ -14,6 +14,7 @@ const HeroBanner = () => {
         flexDirection: "column",
         m: 2,
         p: 2,
+        height:"86vh",
         gap: 2,
         justifyContent: "space-between",
       }}
@@ -68,8 +69,6 @@ const HeroBanner = () => {
           flexDirection: "row",
           justifyContent: 'center',
           flexWrap: { xs: "wrap", lg: "nowrap" },
-          mt: 2,
-          mb: 2,
         }}
       >
         <Typography
