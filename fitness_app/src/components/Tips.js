@@ -43,7 +43,7 @@ const Tips = () => {
         </Box>
       </Box>
 
-      <Paper sx={{ p: 3 }}>
+      <Box className="circle-shadow" sx={{ p: 3 }}>
         <Box sx={{ display: "flex", flexDirection: "row", gap: 1, mb: 2 }}>
           <Typography sx={{ fontFamily: "Alegreya", fontSize: "24px" }}>
             {t("tips-here")}{" "}
@@ -131,7 +131,7 @@ const Tips = () => {
         <Typography sx={{ fontFamily: "Alegreya", fontSize: "24px" }}>
           {t("motivation-continue")}
         </Typography>
-      </Paper>
+      </Box>
     </Box>
   );
 };
