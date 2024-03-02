@@ -8,7 +8,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Tips from "./components/Tips";
 import "./translation/i18n";
-
+import { inject } from '@vercel/analytics';
+ 
+inject();
 const App = () => {
   return (
     <Box >
