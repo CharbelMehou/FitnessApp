@@ -49,6 +49,7 @@ const resources = {
       "back":"Back",
       "cardio":"Cardio",
       "chest":"Chest",
+      "Delts":"Delts",
       "pectorals":"pectorals",
       "lower arms":"Lower Arms",
       "forearms":"Forearms",
@@ -59,6 +60,12 @@ const resources = {
       "upper legs":"Upper Legs",
        "triceps":"Triceps",
        "biceps":"Biceps",
+       "Lats":"Lats",
+       "Glutes":"Glutes",
+       "Calves":"Calves",
+       "cardiovascular system":"cardiovascular system",
+       "Upper Back":"Upper Back",
+       "Hamstrings":"Hamstrings",
        "Lats":"Lats",
       "all":"All"
     }
@@ -114,6 +121,8 @@ const resources = {
         "lower Arms":"Avant-bras & Brachial",
         "forearms":"Avant-bras",
         "lower legs":"Mollets",
+        "lower arms":"Avant-bras",
+        "Delts":"Deltoïde",
         "neck":"Cou",
         "pectorals":"Pectoraux",
         "shoulders":"Epaules",
@@ -122,6 +131,12 @@ const resources = {
         "upper legs":"Quadriceps & Ischios",
         "biceps":"Biceps",
         "Lats":"Dorsaux",
+        "Glutes":"Fessiers",
+        "Lats":"Grand dorsaux",
+        "cardiovascular system":"système cardiovasculaire",
+        "Calves":"Mollets",
+        "Hamstrings":"Ischios",
+        "Upper Back":"Haut du dos",
         "all":"Tout"
       }
       
